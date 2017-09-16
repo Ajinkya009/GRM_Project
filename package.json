@@ -1,0 +1,23 @@
+{
+  "name": "grm_project",
+  "version": "1.0.0",
+  "description": "Project for GRM college",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajinkya Deshmukh",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "mongoose": "^4.11.11",
+    "passport": "^0.4.0",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.12.1"
+  }
+}

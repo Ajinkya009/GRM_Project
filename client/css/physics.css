@@ -1,0 +1,133 @@
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100vh - 80px);
+}
+
+header,
+footer {
+  padding: 20px;
+  background: #282828;
+  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: rgba(19, 35, 47, 0.9);
+  margin-top: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
+  border:2px solid #1ab188;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+main .col3 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: rgba(19, 35, 47, 0.9);
+  color:#1ab188;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+main .col2 {
+  width: 260px;
+  background: rgba(19, 35, 47, 0.9);
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  border-right:2px solid #1ab188;
+  color:#1ab188;
+  overflow-y: scroll;  
+  overflow-x: hidden;
+}
+main .col1 {
+  width: 260px;
+  background: rgba(19, 35, 47, 0.9);  
+  border-right:2px solid #1ab188;
+  color:#1ab188;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+main .col1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  background-color: #a0b3b0;
+}
+
+main .col1::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #a0b3b0;
+}
+
+main .col1::-webkit-scrollbar-thumb
+{
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #D62929;
+}
+main .col2::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  background-color: #a0b3b0;
+}
+
+main .col2::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #a0b3b0;
+}
+
+main .col2::-webkit-scrollbar-thumb
+{
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #D62929;
+}
+main .col3::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  background-color: #a0b3b0;
+}
+
+main .col3::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #a0b3b0;
+}
+
+main .col3::-webkit-scrollbar-thumb
+{
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #D62929;
+}
+
+
+@media (max-width: 640px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .col2, main .col3 {
+    width: auto;
+    height: 50px;
+  }
+}
